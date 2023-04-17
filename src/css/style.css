@@ -1,0 +1,99 @@
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #E5E5E5;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    width: 90%;
+    padding-left: 225px;
+}
+
+.acordeon{
+    width: 655px;
+    height: 350px;
+    border-radius: 20px;
+    position: relative;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.acordeon img{
+    position: absolute;
+    left: -90px;
+}
+
+.acordeon .container h1{
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 14px;
+}
+
+.acordeon .items .item{
+    background-image: url(../images/seta.png);
+    background-repeat: no-repeat;
+    background-position: top 8px right 0;
+    background-size: 12px;
+    border-bottom: 1px solid #ccc;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.acordeon .items .item:last-child{
+    border-bottom: none;
+}
+
+.acordeon .items .item .question{
+    font-size: 17px;
+    padding-bottom: 15px;
+    width: 90%;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.acordeon .items .item .answer{
+    font-size: 15px;
+    font-weight: 300;
+    display: none;
+    padding-bottom: 7px;
+}
+
+.acordeon .items .item .question:hover{
+    color: coral;
+}
+
+
+
+/* ATIVO */
+
+.acordeon .items .item.ativo .question{
+    font-weight: 700;
+}
+
+
+
+.acordeon .items .item.ativo .answer{
+    display: block;
+}
+
+.acordeon .items .item.ativo{
+    background-image: url(../images/seta\ aberta.png);
+}
+
+
+
+
+
+
+
+
+
